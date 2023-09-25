@@ -81,10 +81,10 @@ async def get_cmc_price(coin, update: Update, context: ContextTypes.DEFAULT_TYPE
     )
 
     general_data_sheme = (
-        ("💰", "M. Cap", "market_cap"),
-        ("💵", "Circ. S", "circulating_supply"),
-        ("🖨", "Total S", "total_supply"),
-        ("🏦", "Max S", "max_supply"),
+        ("Ⓜ️", "M. Cap", "market_cap"),
+        ("🅲", "Circ. S", "circulating_supply"),
+        ("🆃", "Total S", "total_supply"),
+        ("🅼", "Max S", "max_supply"),
     )
 
     general_data = []
