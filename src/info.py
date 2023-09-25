@@ -10,12 +10,15 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
         parse_mode="markdown",
-        text="Did you know, you can ask me for the current price of any crypto by typing:\n\n"
+        text="Hello!!! This is CypherCAT from CypherBOT \n"
+        "I can do a copy trade from influencer/wallet, snipe tokens, buy presales, place limit orders, swap tokens and many more \n"
+        "You can also ask me for the current price of any crypto by typing:\n\n"
         "`/p <crypto_ticker>` or /cmc <crpto_ticker> \n\n"
         "For example, `/p btc` \n"
         "will give you the current price of Bitcoin. \n\n"
         "To display the complete list of price, type `/cmc <crypto_ticker>`. \n"
-        "Type /help to see all available command, some feature still on developing",
+        "Type /help to see all available command, some feature still on developing \n\n"
+        "By proceeding to use the bot, you confirm that you have read and agreed to our [Terms of Service](https://cypherbot.tech)",
     )
     logging.info("Start call")
 
@@ -36,7 +39,7 @@ async def bot_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "/news - to receive CoinTelegraph news\n"
         "/help - to receive this message\n\n"
         "This bot is written with love by CypherBOT Team"
-        "[Dev](https://t.me/asinpeda)\n\n"
-        "`Bot version: 1.0.1`\n",
+        "[Dev](https://t.me/asinpeda) - [Website](https://cypherbot.tech)\n\n"
+        "`Bot version: LucyHarun v1.0.1`\n",
     )
     logging.info(f"Help call")
