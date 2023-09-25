@@ -92,9 +92,9 @@ async def get_cg_price(coin, update: Update, context: ContextTypes.DEFAULT_TYPE)
         "1y": "price_change_percentage_1y",
     }
     general_data_sheme = (
-        ("💰", "M. Cap", "market_cap"),
-        ("💵", "Circ. S", "circulating_supply"),
-        ("🖨", "Total S", "total_supply"),
+        ("🅼", "M. Cap", "market_cap"),
+        ("🅲", "Circ. S", "circulating_supply"),
+        ("🆃", "Total S", "total_supply"),
     )
 
     general_data = []
