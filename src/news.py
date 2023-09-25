@@ -9,7 +9,7 @@ RSS_URL = "https://cointelegraph.com/editors_pick_rss"
 async def news(update: Update, context: ContextTypes.DEFAULT_TYPE):
     feed = feedparser.parse(RSS_URL)
     latest_entries = feed.entries[:7]
-    message = "    📰 Editors pick from CoinTelegraph 📰\n\n"
+    message = "    📰 Here is some updated news from CoinTelegraph 📰\n\n"
     for entry in latest_entries:
         message += f"🗞️ [{entry['title']}]({entry['link']})\n\n"
     await context.bot.send_message(
