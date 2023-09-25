@@ -11,10 +11,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         chat_id=update.effective_chat.id,
         parse_mode="markdown",
         text="Did you know, you can ask me for the current price of any crypto by typing:\n\n"
-        "`/p <crypto_ticker>` \n\n"
-        "For example, `/p btc` will give you the current price of Bitcoin. Enjoy!\n\n"
-        "To display the complete list of price, type `/cmc <crypto_ticker>`"
-        "Type `/help` to see all available command, some feature still on developing",
+        "`/p <crypto_ticker>` or /cmc <crpto_ticker> \n\n"
+        "For example, `/p btc` \n"
+        "will give you the current price of Bitcoin. \n\n"
+        "To display the complete list of price, type `/cmc <crypto_ticker>`. \n"
+        "Type /help to see all available command, some feature still on developing",
     )
     logging.info("Start call")
 
