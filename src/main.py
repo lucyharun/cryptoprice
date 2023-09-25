@@ -64,7 +64,7 @@ async def cmc_coin_check(
         reply_markup = InlineKeyboardMarkup(keyboard)
         await context.bot.send_message(
             chat_id=update.message.chat_id,
-            text="🟠 There are multiple coins with the same symbol, please select the desired one:",
+            text="🤷‍♀️ There are multiple coins with the same symbol, please select the desired one:",
             reply_markup=reply_markup,
         )
 
@@ -99,7 +99,7 @@ async def gc_coin_check(
         reply_markup = InlineKeyboardMarkup(keyboard)
         await context.bot.send_message(
             chat_id=update.message.chat_id,
-            text="🟠 There are multiple coins with the same symbol, please select the desired one:",
+            text="🤷‍♀️ There are multiple coins with the same symbol, please select the desired one:",
             reply_markup=reply_markup,
         )
     else:
@@ -110,7 +110,7 @@ async def gc_coin_check(
         reply_markup = InlineKeyboardMarkup(keyboard)
         await context.bot.send_message(
             chat_id=update.message.chat_id,
-            text="🟠 There are multiple coins with the same symbol, please select the desired one:",
+            text="🤷‍♀️ There are multiple coins with the same symbol, please select the desired one:",
             reply_markup=reply_markup,
         )
 
@@ -152,8 +152,8 @@ async def cg_chart_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def chart_color_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     themes = [
-        ["🌕 white", "charttemplate_plotly_white"],
-        ["🌑 dark", "charttemplate_plotly_dark"],
+        ["🌝 white", "charttemplate_plotly_white"],
+        ["🌚 dark", "charttemplate_plotly_dark"],
     ]
     keyboard = []
     for theme in themes:
@@ -162,7 +162,7 @@ async def chart_color_handler(update: Update, context: ContextTypes.DEFAULT_TYPE
     reply_markup = InlineKeyboardMarkup(keyboard)
     await context.bot.send_message(
         chat_id=update.message.chat_id,
-        text="🟠 select desired chart theme",
+        text="🌗 select desired chart theme",
         reply_markup=reply_markup,
     )
 
