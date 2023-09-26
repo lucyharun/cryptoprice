@@ -10,7 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
         parse_mode="markdown",
-        text="Hi, This is CypherCAT from CypherBOT\n"
+        text="Hi, This is *CypherCAT* from *CypherBOT*\n"
         "I can do a copy trade from influencer/wallet, snipe tokens, buy presales, place limit orders, swap tokens and many more\n"
         "You can also ask me for the current price of any crypto by typing:\n\n"
         "`/p <crypto_ticker>` or /cmc <crpto_ticker>\n\n"
